@@ -68,7 +68,7 @@ def main():
         print('  "{}\", Released: {}'.format(record['album'], releaseDate.year))
 
 
-    prRed(len(clientData))
+    prYellow(len(clientData))
 
     print(sorted_clientData[10]['website'])
 
