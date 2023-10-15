@@ -1,0 +1,6 @@
+
+# all data files
+# like: Data/FullMasteringClientDB.tsv
+
+*.tsv
+
