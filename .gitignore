@@ -3,6 +3,7 @@
 # like: Data/FullMasteringClientDB.tsv
 
 *.tsv
+.#*
 
 # and the Data Directory
 

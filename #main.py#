@@ -40,12 +40,6 @@ def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
 
-# prCyan("Hello World, ")
-# prYellow("It's")
-# prGreen("Geeks")
-# prRed("For")
-# prGreen("Geeks")
-
 
 
 # Main Function / Program
@@ -60,10 +54,8 @@ def main():
         prGreen(record['artist'])
         print('  "{}\", Released: {}'.format(record['album'], releaseDate.year))
 
-
     prYellow(len(clientData))
 
-    print(sorted_clientData[10]['website'])
 
 
 main()
