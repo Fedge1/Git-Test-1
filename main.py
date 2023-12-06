@@ -57,17 +57,6 @@ def main():
     prYellow(len(clientData))
 
 
-<<<<<<< HEAD
 
-main()
-=======
 if __name__ == "__main__":
     main()
-
-                
-
-            
-
-        
-
->>>>>>> NameMain
