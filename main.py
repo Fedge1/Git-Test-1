@@ -40,12 +40,6 @@ def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
 
-# prCyan("Hello World, ")
-# prYellow("It's")
-# prGreen("Geeks")
-# prRed("For")
-# prGreen("Geeks")
-
 
 
 # Main Function / Program
@@ -63,5 +57,17 @@ def main():
     prYellow(len(clientData))
 
 
+<<<<<<< HEAD
 
 main()
+=======
+if __name__ == "__main__":
+    main()
+
+                
+
+            
+
+        
+
+>>>>>>> NameMain
