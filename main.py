@@ -54,7 +54,7 @@ def main():
         prGreen(record['artist'])
         print('  "{}\", Released: {}'.format(record['album'], releaseDate.year))
 
-    prYellow(len(clientData))
+    prPurple(len(clientData))
 
 
 
