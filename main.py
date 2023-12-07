@@ -12,8 +12,10 @@ from datetime import datetime
 def getClientsToDisplay():
     clientDataList = []
     # Get the Client Database, and correct path
+    
     script_directory = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
     clientFile_path = os.path.join(script_directory, 'Data', 'FullMasteringClientDB.tsv')
+
     # open Data, and Read
     with open(clientFile_path, 'r') as clientDataFile:
         tsv_reader = csv.DictReader(clientDataFile, fieldnames=['display', 'artist', 'release', 'image', 'album', 'website'], delimiter='\t')
@@ -54,9 +56,15 @@ def main():
         prGreen(record['artist'])
         print('  "{}\", Released: {}'.format(record['album'], releaseDate.year))
 
-    prPurple(len(clientData))
+    #prYellow(len(clientData))
+    prCyan(len(clientData))
 
 
-
-if __name__ == "__main__":
+    
+if __name__ == '__main__':
+    print(__name__)
     main()
+
+#main()    
+
+
