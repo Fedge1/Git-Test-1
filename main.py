@@ -18,7 +18,13 @@ def getClientsToDisplay():
 
     # open Data, and Read
     with open(clientFile_path, 'r') as clientDataFile:
-        tsv_reader = csv.DictReader(clientDataFile, fieldnames=['display', 'artist', 'release', 'image', 'album', 'website'], delimiter='\t')
+        tsv_reader = csv.DictReader(clientDataFile, fieldnames=['display',
+                                                                'artist',
+                                                                'release',
+                                                                'image',
+                                                                'album',
+                                                                'website'], delimiter='\t')
+
         for line in tsv_reader:
             if line['display'] == 'Y':
                 clientDataList.append(line)
