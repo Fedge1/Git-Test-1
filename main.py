@@ -5,6 +5,7 @@ import csv
 import os
 import inspect
 from datetime import datetime
+import print_colours as pr
 
 
 
@@ -31,21 +32,21 @@ def getClientsToDisplay():
     return clientDataList
 
 
-def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+# def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+# def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
 
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+# def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
 
-def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
+# def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
 
-def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+# def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
 
-def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+# def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 
-def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
+# def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 
-def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+# def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
 
 
@@ -59,11 +60,11 @@ def main():
 
     for record in sorted_clientData:
         releaseDate = datetime.fromisoformat(record['release'])
-        prGreen(record['artist'])
+        pr.Green(record['artist'])
         print('  "{}\", Released: {}'.format(record['album'], releaseDate.year))
 
     #prYellow(len(clientData))
-    prCyan(len(clientData))
+    pr.Cyan(len(clientData))
 
 
     
