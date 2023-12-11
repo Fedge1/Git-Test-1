@@ -51,6 +51,7 @@ def main():
 
     #prYellow(len(clientData))
     pr.Yellow(len(clientData))
+    pr.printInColour(len(clientData),'red')
 
 
 ####################    
