@@ -8,7 +8,9 @@ import os
 import inspect
 from datetime import datetime
 import print_colours as pr
+import importlib as il
 
+il.reload(pr)
 
 ####################
 # Open the Client Data File, and if marked, add record to Client (Array) List
@@ -50,8 +52,8 @@ def main():
         print('  "{}\", Released: {}'.format(record['album'], releaseDate.year))
 
     #prYellow(len(clientData))
-    pr.Yellow(len(clientData))
-    pr.printInColour(len(clientData),'red')
+    pr.Cyan(len(clientData))
+    pr.Red(len(clientData))
 
 
 ####################    

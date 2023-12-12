@@ -16,22 +16,14 @@ colours = {
     'reset': '\033[00m'
 }
 
-def printInColour(text, colour):
+def printInColour(colour, text):
     print(f'{colours[colour]} {text}{colours["reset"]}')
 
-
-def Red(skk): print("\033[91m {}\033[00m" .format(skk))
-
-def Green(skk): print("\033[92m {}\033[00m" .format(skk))
-
-def Yellow(skk): print("\033[93m {}\033[00m" .format(skk))
-
-def LightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
-
-def Purple(skk): print("\033[95m {}\033[00m" .format(skk))
-
-def Cyan(skk): print("\033[96m {}\033[00m" .format(skk))
-
-def LightGray(skk): print("\033[97m {}\033[00m" .format(skk))
-
-def Black(skk): print("\033[98m {}\033[00m" .format(skk))
+Red = partial(printInColour, 'red')
+Green = partial(printInColour, 'green')
+Yellow = partial(printInColour, 'yellow')
+LightPurple = partial(printInColour, 'lightPurple')
+Purple = partial(printInColour, 'purple')
+Cyan = partial(printInColour, 'cyan')
+LightGrey = partial(printInColour, 'lightGrey')
+Black = partial(printInColour, 'black')
